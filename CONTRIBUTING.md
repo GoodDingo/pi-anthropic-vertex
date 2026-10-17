@@ -52,8 +52,9 @@ Before opening a PR, make sure you have done all of the following:
 - [ ] **Update mirrored files.** If pi changed `estimate.ts` or
       `simple-options.ts`, fetch the new source and adapt the imports.
       Do not hand-edit the logic; copy the pi source and only change import
-      paths from relative (`../types.ts`) to compat
-      (`@earendil-works/pi-ai/compat`).
+      paths. See `sync/copy-sources.sh` for the full mapping (e.g.
+      `../types.ts` to `@earendil-works/pi-ai/compat`, `../models.ts` to
+      `@earendil-works/pi-ai/models`).
 
 - [ ] **Update mirrored functions in `index.ts`.** If pi changed
       `streamSimple`'s thinking logic or `mapThinkingLevelToEffort` in

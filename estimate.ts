@@ -1,4 +1,4 @@
-// Keep in sync with: https://github.com/earendil-works/pi/blob/v0.99.2/packages/ai/src/utils/estimate.ts
+// Keep in sync with: https://github.com/earendil-works/pi/blob/v1.3.0/packages/ai/src/utils/estimate.ts
 import type { AssistantMessage, ImageContent, Message, TextContent, TranscriptContext, Usage } from "@earendil-works/pi-ai/compat";
 import { getSystemMessageText } from "@earendil-works/pi-ai/compat";
 
@@ -13,7 +13,7 @@ export interface ContextUsageEstimate {
 	lastUsageIndex: number | null;
 }
 
-const CHARS_PER_TOKEN = 4;
+const CHARS_PER_TOKEN = 3.5;
 const ESTIMATED_IMAGE_CHARS = 4800;
 
 export function calculateContextTokens(usage: Usage): number {
