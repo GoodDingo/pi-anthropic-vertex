@@ -1,4 +1,4 @@
-// Keep in sync with: https://github.com/earendil-works/pi/blob/v0.99.1/packages/ai/src/api/simple-options.ts
+// Keep in sync with: https://github.com/earendil-works/pi/blob/v0.99.2/packages/ai/src/api/simple-options.ts
 import type {
 	Api,
 	Model,
